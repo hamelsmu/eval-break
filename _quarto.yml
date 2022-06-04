@@ -12,7 +12,7 @@ website:
     style: "docked"
     search: true
     contents:
-      - example.ipynb
+      - posts/example.ipynb
 
 format:
   html:
