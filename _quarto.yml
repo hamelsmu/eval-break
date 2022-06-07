@@ -13,9 +13,11 @@ website:
     search: true
     contents:
       - posts/example.ipynb
+      - posts/toc.ipynb
 
 format:
   html:
     toc: true
+    toc-depth: 5
     theme: cosmo
     css: styles.css
