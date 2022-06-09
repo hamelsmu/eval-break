@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "posts/example.html",
+    "href": "posts/example.html",
+    "title": "example-page",
+    "section": "",
+    "text": "This is a markdown table\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\na\n\n\ndescription of param a\n\n\nb\nbool\nTrue\ndescription of param b\n\n\nc\nstr\nNone\n\n\n\nReturns\nint"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/example.html#using-_repr_markdown_",
+    "href": "posts/example.html#using-_repr_markdown_",
+    "title": "example-page",
+    "section": "Using _repr_markdown_",
+    "text": "Using _repr_markdown_\n\nclass Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        tbl=\"\"\"|    | **Type** | **Default** | **Details** |\n| -- | -------- | ----------- | ----------- |\n| a |  |  | description of param a |\n| b | bool | True | description of param b |\n| c | str | None |  |\n| **Returns** | **int** |  |  |\"\"\"\n        return tbl\n\n\nFoo()\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\na\n\n\ndescription of param a\n\n\nb\nbool\nTrue\ndescription of param b\n\n\nc\nstr\nNone\n\n\n\nReturns\nint"
+  },
+  {
+    "objectID": "posts/08_showdoc.html",
+    "href": "posts/08_showdoc.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "Display symbol documentation in notebook and website\n\nYou can use show_doc to document apis of functions, classes or methods:\n\ndef f(x:int=1):\n    \"func docstring\"\n    ...\n\nshow_doc(f)\n\n\n\n\n\nf(x: int = 1)\n\nfunc docstring\n\n\n\n\nclass Foo:\n    def __init__(d:str,e:int):\n        \"This is the docstring for the __init__ method\"\n        ...\n\nshow_doc(Foo)\n\n\n\n\n\nFoo(e: int)\n\nThis is the docstring for the init method"
+  },
+  {
+    "objectID": "posts/mdoutput.html",
+    "href": "posts/mdoutput.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "class Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n\nSome other stuff here\n\n### If this doesn't appear in the TOC could be a bug.\n        \"\"\"\n\nFoo()\n\n\nSome other stuff here\n\n\n\n\n\nYou can use lorem ipsum to document apis.\n\nprint('hello')\n\nhello"
+  },
+  {
+    "objectID": "posts/example.html#what-about-markdown-output",
+    "href": "posts/example.html#what-about-markdown-output",
+    "title": "example-page",
+    "section": "What about Markdown Output ?",
+    "text": "What about Markdown Output ?\n\nclass Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n        \"\"\"\n\nFoo()\n\nHello This is a Test Of Markdown Output\n\n\n\nclass Test:\n    def __init__(self):...\n    def _repr_markdown_(self):\n        return \">      fakemdstring(thisisafake:int, thing:str='foo', totestcsstosee:bool=False, ifitworks:bool=None, anotherarg:int=342, isitgoigntowraparound:bool=True)\"\n\nTest()\n\n\n fakemdstring(thisisafake:int, thing:str='foo', totestcsstosee:bool=False, ifitworks:bool=None, anotherarg:int=342, isitgoigntowraparound:bool=True)"
+  },
+  {
+    "objectID": "posts/example.html#hello-this-is-a-test-of-markdown-output",
+    "href": "posts/example.html#hello-this-is-a-test-of-markdown-output",
+    "title": "example-page",
+    "section": "Hello This is a Test Of Markdown Output",
+    "text": "Hello This is a Test Of Markdown Output"
+  },
+  {
+    "objectID": "posts/toc.html",
+    "href": "posts/toc.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "class Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n\nSome other stuff here\n\n### If this doesn't appear in the TOC could be a bug.\n        \"\"\"\n\nFoo()\n\n\nSome other stuff here\n\n\n\n\n\nYou can use lorem ipsum to document apis.\n\nprint('hello')\n\nhello"
+  }
+]
