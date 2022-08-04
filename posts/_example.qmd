@@ -1,0 +1,70 @@
+---
+jupyter: python3
+---
+
+---
+output-file: example
+title: example-page
+---
+
+## A Markdown Cell
+
+This is a markdown table
+
+|    | **Type** | **Default** | **Details** |
+| -- | -------- | ----------- | ----------- |
+| a |  |  | description of param a |
+| b | bool | True | description of param b |
+| c | str | None |  |
+| **Returns** | **int** |  |  |
+
+## Using `_repr_markdown_`
+
+```{python}
+class Foo:
+    def __init__(self): ...
+    def _repr_markdown_(self):
+        tbl="""|    | **Type** | **Default** | **Details** |
+| -- | -------- | ----------- | ----------- |
+| a |  |  | description of param a |
+| b | bool | True | description of param b |
+| c | str | None |  |
+| **Returns** | **int** |  |  |"""
+        return tbl
+```
+
+```{python}
+Foo()
+```
+
+## What about Markdown Output ?
+
+```{python}
+class Foo:
+    def __init__(self): ...
+    def _repr_markdown_(self):
+        return """
+## Hello This is a Test Of Markdown Output
+        """
+
+Foo()
+```
+
+```{python}
+class Test:
+    def __init__(self):...
+    def _repr_markdown_(self):
+        return ">      fakemdstring(thisisafake:int, thing:str='foo', totestcsstosee:bool=False, ifitworks:bool=None, anotherarg:int=342, isitgoigntowraparound:bool=True)"
+
+Test()
+```
+
+```{python}
+from time import sleep
+```
+
+```{python}
+sleep(1)
+```
+
+
