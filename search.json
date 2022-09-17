@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "posts/toc.html",
+    "href": "posts/toc.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "class Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n\nSome other stuff here\n\n### If this doesn't appear in the TOC could be a bug.\n        \"\"\"\n\nFoo()\n\n\nSome other stuff here\n\n\n\n\n\nYou can use lorem ipsum to document apis.\n\nprint('hello')\n\nhello"
+  },
+  {
+    "objectID": "posts/example.html",
+    "href": "posts/example.html",
+    "title": "example-page",
+    "section": "",
+    "text": "This is a markdown table\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\na\n\n\ndescription of param a\n\n\nb\nbool\nTrue\ndescription of param b\n\n\nc\nstr\nNone\n\n\n\nReturns\nint"
+  },
+  {
+    "objectID": "posts/example.html#using-_repr_markdown_",
+    "href": "posts/example.html#using-_repr_markdown_",
+    "title": "example-page",
+    "section": "Using _repr_markdown_",
+    "text": "Using _repr_markdown_\n\nclass Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        tbl=\"\"\"|    | **Type** | **Default** | **Details** |\n| -- | -------- | ----------- | ----------- |\n| a |  |  | description of param a |\n| b | bool | True | description of param b |\n| c | str | None |  |\n| **Returns** | **int** |  |  |\"\"\"\n        return tbl\n\n\nFoo()\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\na\n\n\ndescription of param a\n\n\nb\nbool\nTrue\ndescription of param b\n\n\nc\nstr\nNone\n\n\n\nReturns\nint"
+  },
+  {
+    "objectID": "posts/example.html#what-about-markdown-output",
+    "href": "posts/example.html#what-about-markdown-output",
+    "title": "example-page",
+    "section": "What about Markdown Output ?",
+    "text": "What about Markdown Output ?\n\nclass Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n        \"\"\"\n\nFoo()\n\nHello This is a Test Of Markdown Output\n\n\n\nclass Test:\n    def __init__(self):...\n    def _repr_markdown_(self):\n        return \">      fakemdstring(thisisafake:int, thing:str='foo', totestcsstosee:bool=False, ifitworks:bool=None, anotherarg:int=342, isitgoigntowraparound:bool=True)\"\n\nTest()\n\n\n fakemdstring(thisisafake:int, thing:str='foo', totestcsstosee:bool=False, ifitworks:bool=None, anotherarg:int=342, isitgoigntowraparound:bool=True)"
+  },
+  {
+    "objectID": "posts/example.html#hello-this-is-a-test-of-markdown-output",
+    "href": "posts/example.html#hello-this-is-a-test-of-markdown-output",
+    "title": "example-page",
+    "section": "Hello This is a Test Of Markdown Output",
+    "text": "Hello This is a Test Of Markdown Output"
+  },
+  {
+    "objectID": "posts/tocdepth.html",
+    "href": "posts/tocdepth.html",
+    "title": "Depth TOC",
+    "section": "",
+    "text": "a\n\n\na\n\n\na\n\n\na"
+  },
+  {
+    "objectID": "posts/tocdepth.html#more-stuff",
+    "href": "posts/tocdepth.html#more-stuff",
+    "title": "Depth TOC",
+    "section": "More stuff",
+    "text": "More stuff\na\na\na\na\na\na\na\na\na\na\na\na\na"
+  },
+  {
+    "objectID": "posts/toc2.html",
+    "href": "posts/toc2.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "class Foo:\n    def __init__(self): ...\n    def _repr_markdown_(self):\n        return \"\"\"\n## Hello This is a Test Of Markdown Output\n\nSome other stuff here\n\n### If this doesn't appear in the TOC could be a bug.\n        \"\"\"\n\nFoo()\n\n\nSome other stuff here\n\n\nYou can use lorem ipsum to document apis.\n\nprint('hello yo')\n\nhello\n\n\n\ndef fibonacci(n):\n    a = 0\n    b = 1\n     \n    # Check is n is less\n    # than 0\n    if n < 0:\n        print(\"Incorrect input\")\n         \n    # Check is n is equal\n    # to 0\n    elif n == 0:\n        return 0\n       \n    # Check if n is equal to 1\n    elif n == 1:\n        return b\n    else:\n        for i in range(1, n):\n            c = a + b\n            a = b\n            b = c\n        return b\n\n\n[fibonacci(n) for n in range(100)]\n\n[0,\n 1,\n 1,\n 2,\n 3,\n 5,\n 8,\n 13,\n 21,\n 34,\n 55,\n 89,\n 144,\n 233,\n 377,\n 610,\n 987,\n 1597,\n 2584,\n 4181,\n 6765,\n 10946,\n 17711,\n 28657,\n 46368,\n 75025,\n 121393,\n 196418,\n 317811,\n 514229,\n 832040,\n 1346269,\n 2178309,\n 3524578,\n 5702887,\n 9227465,\n 14930352,\n 24157817,\n 39088169,\n 63245986,\n 102334155,\n 165580141,\n 267914296,\n 433494437,\n 701408733,\n 1134903170,\n 1836311903,\n 2971215073,\n 4807526976,\n 7778742049,\n 12586269025,\n 20365011074,\n 32951280099,\n 53316291173,\n 86267571272,\n 139583862445,\n 225851433717,\n 365435296162,\n 591286729879,\n 956722026041,\n 1548008755920,\n 2504730781961,\n 4052739537881,\n 6557470319842,\n 10610209857723,\n 17167680177565,\n 27777890035288,\n 44945570212853,\n 72723460248141,\n 117669030460994,\n 190392490709135,\n 308061521170129,\n 498454011879264,\n 806515533049393,\n 1304969544928657,\n 2111485077978050,\n 3416454622906707,\n 5527939700884757,\n 8944394323791464,\n 14472334024676221,\n 23416728348467685,\n 37889062373143906,\n 61305790721611591,\n 99194853094755497,\n 160500643816367088,\n 259695496911122585,\n 420196140727489673,\n 679891637638612258,\n 1100087778366101931,\n 1779979416004714189,\n 2880067194370816120,\n 4660046610375530309,\n 7540113804746346429,\n 12200160415121876738,\n 19740274219868223167,\n 31940434634990099905,\n 51680708854858323072,\n 83621143489848422977,\n 135301852344706746049,\n 218922995834555169026]\n\n\n\nprint('this is the last cell')\n\nthis is the last cell\n\n\n\nfrom time import sleep\n\n\nsleep(3)\n\n\nprint('Hello Jeremy')\n\nHello Jeremy\n\n\n\nprint('ding dong')\n\nding dong"
+  },
+  {
+    "objectID": "posts/exec.html",
+    "href": "posts/exec.html",
+    "title": "Exec test",
+    "section": "",
+    "text": "1+2\n\n3"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "nbpages",
+    "section": "",
+    "text": "TOC Test\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nexample-page\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nDepth TOC\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nTOC2 Test\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\nExec test\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  }
+]
